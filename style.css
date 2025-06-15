@@ -1,0 +1,67 @@
+/* style.css */
+
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+  font: 16px Helvetica, Arial, sans-serif;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Make the form text and layout larger and responsive */
+#mc_embed_signup h2 {
+  font-size: 1.8em;
+}
+
+#mc_embed_signup label {
+  font-size: 1.2em;
+}
+
+#mc_embed_signup .asterisk,
+#mc_embed_signup .indicates-required {
+  font-size: 1em;
+}
+
+#mc_embed_signup input[type="email"] {
+  font-size: 1.2em;
+  padding: 14px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#mc_embed_signup input[type="submit"] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  padding: 16px 32px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  #mc_embed_signup {
+    font-size: 18px;
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  #mc_embed_signup h2 {
+    font-size: 2em;
+  }
+
+  #mc_embed_signup label {
+    font-size: 1.4em;
+  }
+
+  #mc_embed_signup input[type="email"],
+  #mc_embed_signup input[type="submit"] {
+    font-size: 1.4em;
+  }
+
+  #mc_embed_signup .indicates-required,
+  #mc_embed_signup .asterisk {
+    font-size: 1.1em;
+  }
+}
