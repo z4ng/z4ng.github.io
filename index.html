@@ -6,33 +6,40 @@
       /* false; */  /* ← original comment preserved */
       clear: left;
       font-family: Helvetica, Arial, sans-serif;
-      font-size: 16px;
+      font-size: 18px;
       max-width: 600px;
-      width: 100%;
+      width: 90%;
       margin: 0 auto;
-      padding: 24px;
+      padding: 32px;
       box-sizing: border-box;
     }
 
     /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 
+    h2 {
+      font-size: 2.4em;
+      margin-bottom: 1.2em;
+      text-align: center;
+      font-weight: 700;
+    }
+
     .mc-field-group {
-      margin-bottom: 20px;
+      margin-bottom: 1.5em;
     }
 
     label {
       display: block;
-      margin-bottom: 8px;
-      font-size: 1.1em;
+      margin-bottom: 0.5em;
+      font-size: 1.2em;
     }
 
     input[type="email"],
     input[type="text"],
     input[type="submit"] {
       width: 100%;
-      padding: 14px;
-      font-size: 1.1em;
+      padding: 18px;
+      font-size: 1.2em;
       border: 1px solid #ccc;
       border-radius: 4px;
       box-sizing: border-box;
@@ -43,49 +50,54 @@
       color: white;
       cursor: pointer;
       border: none;
+      font-weight: bold;
     }
 
     input[type="submit"]:hover {
       background-color: #005f67;
     }
 
-    h2 {
-      font-size: 1.75em;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    /* Responsive adjustments for phones and tablets */
+    /* Extra scaling on small screens */
     @media (max-width: 768px) {
       #mc_embed_signup {
-        padding: 16px;
-        font-size: 18px;
+        width: 95%;
+        padding: 24px;
+        font-size: 20px;
       }
 
       h2 {
-        font-size: 2em;
+        font-size: 2.8em;
       }
 
       label {
-        font-size: 1.2em;
+        font-size: 1.4em;
       }
 
       input[type="email"],
       input[type="text"],
       input[type="submit"] {
-        font-size: 1.2em;
-        padding: 16px;
+        font-size: 1.4em;
+        padding: 20px;
+      }
+
+      input[type="submit"] {
+        font-size: 1.5em;
       }
     }
 
     @media (max-width: 480px) {
-      h2 {
-        font-size: 2.2em;
+      #mc_embed_signup {
+        width: 100%;
+        padding: 16px;
       }
 
+      h2 {
+        font-size: 3em;
+      }
+
+      input[type="email"],
       input[type="submit"] {
-        padding: 18px;
-        font-size: 1.3em;
+        padding: 22px;
       }
     }
   </style>
@@ -117,25 +129,4 @@
   </div>
 
   <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-  <script type="text/javascript">
-    (function($) {
-      window.fnames = new Array();
-      window.ftypes = new Array();
-      fnames[0] = 'EMAIL';
-      ftypes[0] = 'email';
-      fnames[1] = 'FNAME';
-      ftypes[1] = 'text';
-      fnames[2] = 'LNAME';
-      ftypes[2] = 'text';
-      fnames[3] = 'ADDRESS';
-      ftypes[3] = 'address';
-      fnames[4] = 'PHONE';
-      ftypes[4] = 'phone';
-      fnames[5] = 'BIRTHDAY';
-      ftypes[5] = 'birthday';
-      fnames[6] = 'COMPANY';
-      ftypes[6] = 'text';
-    }(jQuery));
-    var $mcj = jQuery.noConflict(true);
-  </script>
-</div>
+  <script type="text/javascri
